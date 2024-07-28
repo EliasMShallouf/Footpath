@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.activities.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/mapViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_tv"
+            android:textSize="18dp"
+            android:text=""
+            android:layout_marginTop="4dp"
+            android:textColor="#8A000000"
+            android:textStyle="italic"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginVertical="48dp"
+            android:layout_marginHorizontal="24dp"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="5dp"
+            app:contentPadding="24dp"
+            app:strokeWidth="0dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_content"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</layout>

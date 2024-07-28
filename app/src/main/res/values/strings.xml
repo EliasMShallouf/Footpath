@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Footpath</string>
+    <string name="select_the_destination_address">Select the destination address</string>
+    <string name="select_the_start_address">Select the start address</string>
+    <string name="finding_the_shortest_path">Finding the shortest path!</string>
+    <string name="please_select_start_address">Please select start address</string>
+    <string name="please_select_dest_address">Please select destination address</string>
+</resources>
