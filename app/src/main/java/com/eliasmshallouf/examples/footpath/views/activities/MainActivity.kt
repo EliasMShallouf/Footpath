@@ -274,16 +274,13 @@ class MainActivity : AppCompatActivity() {
         this@MainActivity
             .loadBitmap(icon)
             ?.let {
-            val annotationApi = mapView.annotations
-            val pointAnnotationManager = annotationApi.createPointAnnotationManager()
-            val pointAnnotationOptions: PointAnnotationOptions = PointAnnotationOptions()
+            pointAnnotationManager.create(PointAnnotationOptions()
                 .withPoint(point)
                 .withIconImage(it)
-            pointAnnotationManager.create(pointAnnotationOptions)
+            )
         }!!
 
     override fun onDestroy() {
         super.onDestroy()
-        mapView.onDestroy()
     }
 }
