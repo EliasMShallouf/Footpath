@@ -29,9 +29,9 @@ object DirectionsApiClient {
         }
 
         install(HttpTimeout) {
-            requestTimeoutMillis = 5000L
-            connectTimeoutMillis = 5000L
-            socketTimeoutMillis = 5000L
+            requestTimeoutMillis = 20_000L
+            connectTimeoutMillis = 20_000L
+            socketTimeoutMillis = 20_000L
         }
 
         install(ContentNegotiation) {

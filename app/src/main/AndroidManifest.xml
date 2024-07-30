@@ -15,7 +15,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Footpath"
-        tools:targetApi="31"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="tiramisu"
         android:name=".App">
         <activity
             android:name=".views.activities.MainActivity"

@@ -56,6 +56,7 @@ class MainActivityViewModel: ViewModel(), LocationListener {
                 DirectionsApiClient
                     .navigate(startLocation.value!!, destinationLocation.value!!)
             } catch (e: Exception) {
+                e.printStackTrace()
                 ""
             }
 
